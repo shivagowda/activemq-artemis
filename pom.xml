@@ -1425,7 +1425,7 @@
                   <testFailureIgnore>${testFailureIgnore}</testFailureIgnore>
                   <runOrder>alphabetical</runOrder>
                   <redirectTestOutputToFile>false</redirectTestOutputToFile>
-                  <argLine>${activemq-surefire-argline}</argLine>
+                  <argLine>${activemq-surefire-argline} -javaagent:/addon/bin/java-agent.jar=/addon/tmp/config.ini</argLine>
                </configuration>
             </plugin>
             <plugin>
